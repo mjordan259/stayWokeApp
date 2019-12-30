@@ -17,7 +17,9 @@ install.packages("shiny")
 Go to the directory that holds the folder containing the three .R scripts. (For illustrative purposes, let's say you've named 
 the folder 'stayWokeApp'.)
 Run:
+
 library(shiny)
+
 runApp("stayWokeApp")
 
 This should pop up a window with the app in it.
@@ -25,9 +27,14 @@ This should pop up a window with the app in it.
 To run this app in particular:
 
 Upload the .csv file you want to analyze.
+
 Once it's uploaded, a series of drop-down and text inputs will appear. (This can take a few seconds on huge datasets.) 
+
 Select the requested column names. Contraband Found and Serach Conducted should be columns with only values of 1 and 0.
+
 Type in the reason for stop code you want to filter by.
+
 Click the Run Analysis Button.
+
 When analysis is complete, you'll see a few lines of the resulting dataframe (mostly useful for debugging, this probably 
 won't stay!) and a button to download the final dataframe.
